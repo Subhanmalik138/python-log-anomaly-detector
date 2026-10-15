@@ -1,0 +1,13 @@
+[project]
+name = "logscan"
+version = "1.0.0"
+description = "Stream log files and flag anomalies: error bursts, latency spikes, and suspicious patterns."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+logscan = "logscan.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
